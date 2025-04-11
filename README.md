@@ -77,7 +77,7 @@ Before you can start with plotly in Jupyter Lab you have to install node.js (if 
    python.exe -m pip install --upgrade pip
    ```
 ## Loading data
-The data that has been used in this repository can be loaded by running the file `1_Fetching_the_data_eda.ipynb`. But beforehand it is necessary to create a `.ENV` file which includes the following information:
+The data that has been used in this repository can be loaded by running the file `Fetching_the_data_eda.ipynb`. But beforehand it is necessary to create a `.ENV` file which includes the following information:
 
 - DATABASE = "database"
 - USER_DB = "user_DB"
