@@ -144,3 +144,6 @@ models/*.pkl
 
 # vscode Stuff
 .vscode
+
+# Exploration file
+Data_Exploration.ipynb

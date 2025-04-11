@@ -1,40 +1,13 @@
-[![Shipping files](https://github.com/neuefische/ds-eda-project-template/actions/workflows/workflow-03.yml/badge.svg?branch=main&event=workflow_dispatch)](https://github.com/neuefische/ds-eda-project-template/actions/workflows/workflow-03.yml)
-# ds-project-template
 
-Template for creating ds simple projects
+# EDA Project
+
+This project is centered around exploratory data analysis techniques and presentation of results to a client.
+All important data preparation, visualizations and results are stored in file `EDA_Project_Nico.ipynb`. To run this file the following steps must be accomplished to get all insights.
 
 ## Requirements
 
 - pyenv
 - python==3.11.3
-
-## Setup
-
-One of the first steps when starting any data science project is to create a virtual environment. For this project you have to create this environment from scratch yourself. However, you should be already familiar with the commands you will need to do so. The general workflow consists of... 
-
-* setting the python version locally to 3.11.3
-* creating a virtual environment using the `venv` module
-* activating your newly created environment 
-* upgrading `pip` (This step is not absolutely necessary, but will save you trouble when installing some packages.)
-* installing the required packages via `pip`
-
-At the end, you want to make sure that people who are interested in your project can create an identical environment on their own computer in order to be able to run your code without running into errors. Therefore you can create a `requirements file` and add it to your repository. You can create such a file by running the following command: 
-
-```bash
-pip freeze > requirements.txt
-```
-
-*Note: In rare case such a requirements file created with `pip freeze` might not ensure that another (especially M1 chip) user can install and execute it properly. This can happen if libraries need to be compiled (e.g. SciPy). Then it also depends on environment variables and the actual system libraries.*
-
-### Unit testing (Optional)
-
-If you write python scripts for your data processing methods, you can also write unit tests. In order to run the tests execute in terminal:
-
-```bash
-pytest
-```
-
-This command will execute all the functions in your project that start with the word **test**.
 
 ## Set up your Environment
 This repo contains a requirements.txt file with a list of all the packages and dependencies you will need.
@@ -103,3 +76,11 @@ Before you can start with plotly in Jupyter Lab you have to install node.js (if 
    ```Bash
    python.exe -m pip install --upgrade pip
    ```
+## Loading data
+The data that has been used in this repository can be loaded by running the file `1_Fetching_the_data_eda.ipynb`. But beforehand it is necessary to create a `.ENV` file which includes the following information:
+
+- DATABASE = "database"
+- USER_DB = "user_DB"
+- PASSWORD = "password"
+- HOST = "host"
+- PORT = "port"
